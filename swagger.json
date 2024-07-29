@@ -13,7 +13,7 @@
       "name": "ISC"
     }
   },
-  "host": "127.0.0.1:1000",
+  "host": "personnel-app-backend.vercel.app:1000",
   "basePath": "/",
   "schemes": [
     "http",
@@ -1093,7 +1093,7 @@
             },
             "default": {
               "type": "number",
-              "example": 1722261959555
+              "example": 1722262136956
             }
           }
         }
