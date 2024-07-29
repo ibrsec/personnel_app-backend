@@ -8,7 +8,7 @@ const {Personnel} = require('../models/personnelModel')
 module.exports = async (req, res, next) => {
   res.user = null;
 
-  const authHeader =  req.headers.authorization || req.headers.Authorization || null;
+  const authHeader =  req.headers.authorization || null;
   console.log("authHeader", authHeader);
   if (authHeader && authHeader.startsWith("Token")) {
     const token = authHeader.split(" ")[1];

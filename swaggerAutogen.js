@@ -33,7 +33,7 @@ const document = {
         contact: { name: packageJson.author, email: 'qadir@clarusway.com' },
         license: { name: packageJson.license }
     },
-    host: `${HOST}:${PORT}`,
+    host: `${HOST}`,
     basePath:'/',
     schemes:['http','https'],
     securityDefinitions:{

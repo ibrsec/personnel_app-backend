@@ -13,7 +13,7 @@
       "name": "ISC"
     }
   },
-  "host": "personnel-app-backend.vercel.app:1000",
+  "host": "personnel-app-backend.vercel.app",
   "basePath": "/",
   "schemes": [
     "http",
@@ -38,11 +38,6 @@
         "parameters": [
           {
             "name": "authorization",
-            "in": "header",
-            "type": "string"
-          },
-          {
-            "name": "Authorization",
             "in": "header",
             "type": "string"
           },
@@ -159,11 +154,6 @@
             "type": "string"
           },
           {
-            "name": "Authorization",
-            "in": "header",
-            "type": "string"
-          },
-          {
             "name": "body",
             "in": "body",
             "description": "<ul> Description: name field is required!",
@@ -198,11 +188,6 @@
             "name": "authorization",
             "in": "header",
             "type": "string"
-          },
-          {
-            "name": "Authorization",
-            "in": "header",
-            "type": "string"
           }
         ],
         "responses": {
@@ -227,11 +212,6 @@
           },
           {
             "name": "authorization",
-            "in": "header",
-            "type": "string"
-          },
-          {
-            "name": "Authorization",
             "in": "header",
             "type": "string"
           },
@@ -268,11 +248,6 @@
             "name": "authorization",
             "in": "header",
             "type": "string"
-          },
-          {
-            "name": "Authorization",
-            "in": "header",
-            "type": "string"
           }
         ],
         "responses": {
@@ -298,11 +273,6 @@
           },
           {
             "name": "authorization",
-            "in": "header",
-            "type": "string"
-          },
-          {
-            "name": "Authorization",
             "in": "header",
             "type": "string"
           },
@@ -421,11 +391,6 @@
             "type": "string"
           },
           {
-            "name": "Authorization",
-            "in": "header",
-            "type": "string"
-          },
-          {
             "name": "filter",
             "in": "query",
             "description": "url?filter[fieldName]=fieldValue",
@@ -538,11 +503,6 @@
             "type": "string"
           },
           {
-            "name": "Authorization",
-            "in": "header",
-            "type": "string"
-          },
-          {
             "name": "body",
             "in": "body",
             "description": "<ul> Description: departmentId,username,password,firstName,lastName, phone, email, title fields are required! Other ones optional -> salary,description,isAdmin,isLead,isActive,startedAt,adminkey!:  <li><b>For admin modification a correct adminkey field is required!</b></li>  <li><b>Creating a lead personnel of a department, converts old lead of asked department to a normal user!</b></li>  <li><b>Password length should be 4 to 16</b></li>  </ul>  ",
@@ -577,11 +537,6 @@
             "name": "authorization",
             "in": "header",
             "type": "string"
-          },
-          {
-            "name": "Authorization",
-            "in": "header",
-            "type": "string"
           }
         ],
         "responses": {
@@ -606,11 +561,6 @@
           },
           {
             "name": "authorization",
-            "in": "header",
-            "type": "string"
-          },
-          {
-            "name": "Authorization",
             "in": "header",
             "type": "string"
           },
@@ -647,11 +597,6 @@
             "name": "authorization",
             "in": "header",
             "type": "string"
-          },
-          {
-            "name": "Authorization",
-            "in": "header",
-            "type": "string"
           }
         ],
         "responses": {
@@ -676,11 +621,6 @@
           },
           {
             "name": "authorization",
-            "in": "header",
-            "type": "string"
-          },
-          {
-            "name": "Authorization",
             "in": "header",
             "type": "string"
           },
@@ -710,11 +650,6 @@
         "parameters": [
           {
             "name": "authorization",
-            "in": "header",
-            "type": "string"
-          },
-          {
-            "name": "Authorization",
             "in": "header",
             "type": "string"
           },
@@ -756,11 +691,6 @@
             "name": "authorization",
             "in": "header",
             "type": "string"
-          },
-          {
-            "name": "Authorization",
-            "in": "header",
-            "type": "string"
           }
         ],
         "responses": {
@@ -780,11 +710,6 @@
         "parameters": [
           {
             "name": "authorization",
-            "in": "header",
-            "type": "string"
-          },
-          {
-            "name": "Authorization",
             "in": "header",
             "type": "string"
           }
@@ -1093,7 +1018,7 @@
             },
             "default": {
               "type": "number",
-              "example": 1722262136956
+              "example": 1722262310949
             }
           }
         }
