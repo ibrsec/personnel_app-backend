@@ -27,8 +27,8 @@ require('./src/config/dbConnection').dbConnection();
 
 
 /* ------------------ middlewares ----------------- */
-app.use(express.json());
 //session cookies
+app.use(express.json());
 // query handler
 app.use(require('./src/middlewares/queryHandler'));
 
@@ -51,6 +51,8 @@ app.use('/documents/swagger', swaggerUI.serve,swaggerUI.setup(swaggerJSON,{ swag
 //redoc
 app.use('/documents/redoc',redoc({specUrl:'/documents/json',title:'Redoc UI'}));
 
+//cors
+app.use(require(require('cors')());
 /* -------------------------------------------- */
 
 
@@ -141,8 +143,8 @@ app.listen(PORT,()=> console.log('Server is running on',PORT))
  * permissions
  *  isLogin
  *  isAdmin
- *  isLeadorAdmin
- * 
+ *  isLeadOrAdmin
+ * all permissions are fixed and tested
  * 
  * 
  * 
