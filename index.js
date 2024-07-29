@@ -25,7 +25,7 @@ const app = express();
 /* ------------------ DB connection ----------------- */
 require('./src/config/dbConnection').dbConnection();
 /* -------------------------------------------- */
-
+ 
 
 /* ------------------ middlewares ----------------- */
 //session cookies
