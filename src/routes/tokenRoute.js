@@ -6,7 +6,7 @@ const { isAdmin } = require('../middlewares/permissions');
 
 const router = require('express').Router();
 
-app.use(isAdmin);
+router.use(isAdmin);
 
 
 router.route('/')
