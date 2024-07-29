@@ -9,7 +9,7 @@
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "Clarusway",
+  "author": "ibrsec",
   "license": "ISC",
   "dependencies": {
     "cookie-session": "^2.0.0",
@@ -19,6 +19,7 @@
     "express-async-errors": "^3.1.1",
     "mongoose": "^8.5.1",
     "morgan": "^1.10.0",
+    "redoc": "^2.1.5",
     "redoc-express": "^2.1.0",
     "swagger-autogen": "^2.23.7",
     "swagger-ui-express": "^5.0.1"
