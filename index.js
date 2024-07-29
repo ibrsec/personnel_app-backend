@@ -10,6 +10,10 @@ require('express-async-errors')
 const swaggerUI = require('swagger-ui-express');
 const redoc = require('redoc-express');
 const cors = require('cors');
+const path = require('path');
+
+
+
 
 const authentication = require('./src/middlewares/authentication');
 /* -------------------------------------------- */
@@ -45,6 +49,9 @@ app.use(authentication);
 app.use('/documents/json',(req,res)=>{
     res.sendFile('swagger.json',{root:'.'})
 })
+
+app.use('/swagger', express.static(path.join(__dirname, 'node_modules', 'swagger-ui-dist')));
+
 
 const swaggerJSON = require('./swagger.json');
 app.use('/documents/swagger', swaggerUI.serve,swaggerUI.setup(swaggerJSON,{ swaggerOptions: { persistAuthorization: true } }))
