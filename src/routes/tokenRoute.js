@@ -1,9 +1,12 @@
 'use strict';
 
 const { token } = require('../controllers/tokenController');
+const { isAdmin } = require('../middlewares/permissions');
 
 
 const router = require('express').Router();
+
+app.use(isAdmin);
 
 
 router.route('/')
