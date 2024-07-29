@@ -9,6 +9,7 @@ require('dotenv').config();
 require('express-async-errors')
 const swaggerUI = require('swagger-ui-express');
 const redoc = require('redoc-express');
+const cors = require('cors');
 
 const authentication = require('./src/middlewares/authentication');
 /* -------------------------------------------- */
@@ -52,7 +53,7 @@ app.use('/documents/swagger', swaggerUI.serve,swaggerUI.setup(swaggerJSON,{ swag
 app.use('/documents/redoc',redoc({specUrl:'/documents/json',title:'Redoc UI'}));
 
 //cors
-app.use(require(require('cors')());
+app.use(cors());
 /* -------------------------------------------- */
 
 
