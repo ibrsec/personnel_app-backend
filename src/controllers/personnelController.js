@@ -9,6 +9,8 @@ module.exports.personnel = {
         #swagger.tags = ["Personnels"]
         #swagger.summary = "List Personnels"
         #swagger.description = `
+            <b>Permission: 'Normal user'</b>
+            </br></br>
             You can send query with endpoint for search[], sort[], page and limit.
             <ul> Examples:
                 <li>URL/?<b>filter[field1]=value1&filter[field2]=value2</b></li>
@@ -59,7 +61,9 @@ module.exports.personnel = {
   create: async (req, res) => {
     /*
         #swagger.tags = ["Personnels"]
-        #swagger.summary = "Create new Personnel"
+        #swagger.summary = "Create new Personnel 
+            "
+            #swagger.description = `</br></br><b>Permission: 'No Permission'</b>`
         #swagger.parameters['body'] = {
             in: 'body',
             description: '<ul> Description: departmentId,username,password,firstName,lastName, phone, email, title fields are required!  Other ones optional -> salary,description,isAdmin,isLead,isActive,startedAt,adminkey!:
@@ -169,7 +173,9 @@ module.exports.personnel = {
     /*
         #swagger.tags = ["Personnels"]
         #swagger.summary = "Get a Personnel"
-        #swagger.description = "Get a Personnel with id"
+        #swagger.description = "Get a Personnel with id 
+            </br></br><b>Permission: 'Normal user'</b>
+            "
         #swagger.parameters['id'] = {
             description: 'Provide a id of a personnel(objectId)',
         }
@@ -196,7 +202,7 @@ module.exports.personnel = {
         #swagger.tags = ["Personnels"]
         #swagger.summary = "Update a Personnel"
         #swagger.description = `
-            Update personnel
+            Update personnel </br></br><b>Permission: 'Admin User'</b>
         `
 
         #swagger.parameters['id'] = {
@@ -327,7 +333,7 @@ module.exports.personnel = {
         #swagger.tags = ["Personnels"]
         #swagger.summary = "Partial update Personnel"
         #swagger.description = `
-            Partial update Personnel
+            Partial update Personnel </br></br><b>Permission: 'Admin User'</b>
         `
         #swagger.parameters['id'] = {
             description: 'Provide a id of a personnel(objectId)',
@@ -456,7 +462,7 @@ module.exports.personnel = {
     /*
         #swagger.tags = ["Personnels"]
         #swagger.summary = "Delete a Personnel"
-        #swagger.description = "Delete a Personnel with id"
+        #swagger.description = "Delete a Personnel with id </br></br><b>Permission: 'Admin User'</b>"
         #swagger.parameters['id'] = {
             description: 'Provide a id of a personnel(objectId)',
         }

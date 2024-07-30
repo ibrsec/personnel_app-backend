@@ -67,15 +67,6 @@ app.use(cors());
 
 
 
-/* -------------------------------------------- */
-
-/* ------------------ IMPORTS ----------------- */
-/* -------------------------------------------- */
-/* ------------------ IMPORTS ----------------- */
-/* -------------------------------------------- */
-/* ------------------ IMPORTS ----------------- */
-/* -------------------------------------------- */
-
 
 
 /* ------------------ ROUTES ----------------- */
@@ -153,6 +144,9 @@ app.listen(PORT,()=> console.log('Server is running on',PORT))
  *  isAdmin
  *  isLeadOrAdmin
  * all permissions are fixed and tested
+ * cors
+ * swagger path
+ * permission to swager controller descriptions
  * 
  * 
  * 

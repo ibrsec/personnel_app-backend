@@ -8,6 +8,8 @@ module.exports.department = {
         #swagger.tags = ["Departments"]
         #swagger.summary = "List Departments"
         #swagger.description = `
+            <b>Permission: 'Normal user'</b>
+            </br></br>
             You can send query with endpoint for search[], sort[], page and limit.
             <ul> Examples:
                 <li>URL/?<b>filter[field1]=value1&filter[field2]=value2</b></li>
@@ -59,7 +61,8 @@ module.exports.department = {
   create: async (req, res) => {
     /*
         #swagger.tags = ["Departments"]
-        #swagger.summary = "Create new Department"
+        #swagger.summary = "Create new Department "
+        #swagger.description = " <b>Permission: 'Admin user'</b>"
         #swagger.parameters['body'] = {
             in: 'body',
             description: '<ul> Description: name field is required!',
@@ -84,7 +87,9 @@ module.exports.department = {
     /*
         #swagger.tags = ["Departments"]
         #swagger.summary = "Get a Department"
-        #swagger.description = "Get a Department with id"
+        #swagger.description = "
+            <b>Permission: 'Normal user'</b>
+            </br></br>Get a Department with id"
         #swagger.parameters['id'] = {
             description: 'Provide a id of a department(objectId)',
         }
@@ -111,7 +116,8 @@ module.exports.department = {
         #swagger.tags = ["Departments"]
         #swagger.summary = "Update Department"
         #swagger.description = `
-            Update a department
+            Update a department </br></br>
+            <b>Permission: 'Admin user'</b>
         `
 
         #swagger.parameters['id'] = {
@@ -164,7 +170,8 @@ module.exports.department = {
     /*
         #swagger.tags = ["Departments"]
         #swagger.summary = "Delete a Department"
-        #swagger.description = "Delete a Department with id"
+        #swagger.description = "Delete a Department with id  </br></br>
+            <b>Permission: 'Admin user'</b>"
         #swagger.parameters['id'] = {
             description: 'Provide a id of a department(objectId)',
         }
@@ -197,7 +204,8 @@ module.exports.department = {
     /* 
         #swagger.tags = ["Departments"]
         #swagger.summary = "List the Personnels of a Departments"
-        #swagger.description = `
+        #swagger.description =  
+            <b>Permission: 'Admin or Lead of the department'</b> </br></br>`
             You can send query with endpoint for search[], sort[], page and limit.
             <ul> Examples:
                 <li>URL/?<b>filter[field1]=value1&filter[field2]=value2</b></li>

@@ -34,7 +34,7 @@
           "Departments"
         ],
         "summary": "List Departments",
-        "description": "  You can send query with endpoint for search[], sort[], page and limit.  <ul> Examples:  <li>URL/?<b>filter[field1]=value1&filter[field2]=value2</b></li>  <li>URL/?<b>search[field1]=value1&search[field2]=value2</b></li>  <li>URL/?<b>sort[field1]=1&sort[field2]=-1</b></li>  <li>URL/?<b>page=2&limit=1</b></li>  </ul>  ",
+        "description": "  <b>Permission: 'Normal user'</b>  </br></br>  You can send query with endpoint for search[], sort[], page and limit.  <ul> Examples:  <li>URL/?<b>filter[field1]=value1&filter[field2]=value2</b></li>  <li>URL/?<b>search[field1]=value1&search[field2]=value2</b></li>  <li>URL/?<b>sort[field1]=1&sort[field2]=-1</b></li>  <li>URL/?<b>page=2&limit=1</b></li>  </ul>  ",
         "parameters": [
           {
             "name": "authorization",
@@ -145,8 +145,8 @@
         "tags": [
           "Departments"
         ],
-        "summary": "Create new Department",
-        "description": "",
+        "summary": "Create new Department ",
+        "description": " <b>Permission: 'Admin user'</b>",
         "parameters": [
           {
             "name": "authorization",
@@ -175,7 +175,7 @@
           "Departments"
         ],
         "summary": "Get a Department",
-        "description": "Get a Department with id",
+        "description": "  <b>Permission: 'Normal user'</b>  </br></br>Get a Department with id",
         "parameters": [
           {
             "name": "id",
@@ -201,7 +201,7 @@
           "Departments"
         ],
         "summary": "Update Department",
-        "description": "  Update a department  ",
+        "description": "  Update a department </br></br>  <b>Permission: 'Admin user'</b>  ",
         "parameters": [
           {
             "name": "id",
@@ -235,7 +235,7 @@
           "Departments"
         ],
         "summary": "Delete a Department",
-        "description": "Delete a Department with id",
+        "description": "Delete a Department with id </br></br>  <b>Permission: 'Admin user'</b>",
         "parameters": [
           {
             "name": "id",
@@ -263,7 +263,7 @@
           "Departments"
         ],
         "summary": "List the Personnels of a Departments",
-        "description": "  You can send query with endpoint for search[], sort[], page and limit.  <ul> Examples:  <li>URL/?<b>filter[field1]=value1&filter[field2]=value2</b></li>  <li>URL/?<b>search[field1]=value1&search[field2]=value2</b></li>  <li>URL/?<b>sort[field1]=1&sort[field2]=-1</b></li>  <li>URL/?<b>page=2&limit=1</b></li>  </ul>  ",
+        "description": "<b>Permission: 'Admin or Lead of the department'</b> </br></br>`  You can send query with endpoint for search[], sort[], page and limit.  <ul> Examples:  <li>URL/?<b>filter[field1]=value1&filter[field2]=value2</b></li>  <li>URL/?<b>search[field1]=value1&search[field2]=value2</b></li>  <li>URL/?<b>sort[field1]=1&sort[field2]=-1</b></li>  <li>URL/?<b>page=2&limit=1</b></li>  </ul>  ",
         "parameters": [
           {
             "name": "id",
@@ -383,7 +383,7 @@
           "Personnels"
         ],
         "summary": "List Personnels",
-        "description": "  You can send query with endpoint for search[], sort[], page and limit.  <ul> Examples:  <li>URL/?<b>filter[field1]=value1&filter[field2]=value2</b></li>  <li>URL/?<b>search[field1]=value1&search[field2]=value2</b></li>  <li>URL/?<b>sort[field1]=1&sort[field2]=-1</b></li>  <li>URL/?<b>page=2&limit=1</b></li>  </ul>  ",
+        "description": "  <b>Permission: 'Normal user'</b>  </br></br>  You can send query with endpoint for search[], sort[], page and limit.  <ul> Examples:  <li>URL/?<b>filter[field1]=value1&filter[field2]=value2</b></li>  <li>URL/?<b>search[field1]=value1&search[field2]=value2</b></li>  <li>URL/?<b>sort[field1]=1&sort[field2]=-1</b></li>  <li>URL/?<b>page=2&limit=1</b></li>  </ul>  ",
         "parameters": [
           {
             "name": "authorization",
@@ -494,8 +494,8 @@
         "tags": [
           "Personnels"
         ],
-        "summary": "Create new Personnel",
-        "description": "",
+        "summary": "Create new Personnel   ",
+        "description": "</br></br><b>Permission: 'No Permission'</b>",
         "parameters": [
           {
             "name": "authorization",
@@ -524,7 +524,7 @@
           "Personnels"
         ],
         "summary": "Get a Personnel",
-        "description": "Get a Personnel with id",
+        "description": "Get a Personnel with id   </br></br><b>Permission: 'Normal user'</b>  ",
         "parameters": [
           {
             "name": "id",
@@ -550,7 +550,7 @@
           "Personnels"
         ],
         "summary": "Update a Personnel",
-        "description": "  Update personnel  ",
+        "description": "  Update personnel </br></br><b>Permission: 'Admin User'</b>  ",
         "parameters": [
           {
             "name": "id",
@@ -584,7 +584,7 @@
           "Personnels"
         ],
         "summary": "Delete a Personnel",
-        "description": "Delete a Personnel with id",
+        "description": "Delete a Personnel with id </br></br><b>Permission: 'Admin User'</b>",
         "parameters": [
           {
             "name": "id",
@@ -610,7 +610,7 @@
           "Personnels"
         ],
         "summary": "Partial update Personnel",
-        "description": "  Partial update Personnel  ",
+        "description": "  Partial update Personnel </br></br><b>Permission: 'Admin User'</b>  ",
         "parameters": [
           {
             "name": "id",
@@ -646,7 +646,7 @@
           "Authentication"
         ],
         "summary": "Login with credentials",
-        "description": "Login with valid username and password!       <li><b>Password length should be 4 to 16</b></li>",
+        "description": "Login with valid username and password!       <li><b>Password length should be 4 to 16</b></li>   </br></br><b>Permission: 'No Permission'</b>",
         "parameters": [
           {
             "name": "authorization",
@@ -673,8 +673,8 @@
           }
         ],
         "responses": {
-          "default": {
-            "description": ""
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -685,7 +685,7 @@
           "Authentication"
         ],
         "summary": "Logout with token or without token!",
-        "description": "If user provide a valid token, it will be deleted, but if user doesn't just user will logout!!",
+        "description": "If user provide a valid token, it will be deleted, but if user doesn't just user will logout!!   </br></br><b>Permission: 'No Permission'</b>",
         "parameters": [
           {
             "name": "authorization",
@@ -706,7 +706,7 @@
           "Authentication"
         ],
         "summary": "Get current user",
-        "description": "If user provide a valid token -> user id will be returned!!",
+        "description": "If user provide a valid token -> user id will be returned!!  </br></br><b>Permission: 'No Permission'</b>",
         "parameters": [
           {
             "name": "authorization",
@@ -1018,7 +1018,7 @@
             },
             "default": {
               "type": "number",
-              "example": 1722262310949
+              "example": 1722308181683
             }
           }
         }

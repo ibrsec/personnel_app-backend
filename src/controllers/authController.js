@@ -11,7 +11,8 @@ module.exports.auth = {
              #swagger.summary = Login with credentials
              #swagger.description = `Login with valid username and password!
                                         
-                                <li><b>Password length should be 4 to 16</b></li>`
+                                <li><b>Password length should be 4 to 16</b></li> 
+            </br></br><b>Permission: 'No Permission'</b>`
              #swagger.parameters['body] = {
               in:'body',
               required:true,
@@ -69,7 +70,8 @@ module.exports.auth = {
      /**
              #swagger.tags = ['Authentication'],
              #swagger.summary = Get current user 
-             #swagger.description = `If user provide a valid token -> user id will be returned!!`
+             #swagger.description = `If user provide a valid token -> user id will be returned!!
+            </br></br><b>Permission: 'No Permission'</b>`
              
      */
              
@@ -84,7 +86,8 @@ module.exports.auth = {
     /**
              #swagger.tags = ['Authentication'],
              #swagger.summary = Logout with token or without token!
-             #swagger.description = `If user provide a valid token, it will be deleted, but if user doesn't just user will logout!!`
+             #swagger.description = `If user provide a valid token, it will be deleted, but if user doesn't just user will logout!! 
+            </br></br><b>Permission: 'No Permission'</b>`
              
      */
     const deleteData = await Token.deleteOne({userId:req.user?._id});
