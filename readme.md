@@ -10,10 +10,10 @@
     <img src="./src/assets/logo.png" alt="Logo" width="250"   >
   </a>
 
-  <h3 align="center">Personnel App backend | Fullstack</h3>
+  <h3 align="center">Personnel App backend</h3>
 
   <p align="center">
-    An awesome backend of the Blog App fullstack application
+    An awesome backend of the Personnel App application
     <a href="https://github.com/ibrsec/personnel_app-backend"><strong>Explore the docs »</strong></a>
     <br />
     <br />
